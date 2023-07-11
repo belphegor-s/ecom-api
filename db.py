@@ -4,4 +4,4 @@ from pymongo import MongoClient
 
 load_dotenv()
 
-connection = MongoClient(os.getenv("MONGOURI"))
+connection = MongoClient(str(os.getenv("MONGOURI")))
